@@ -28,7 +28,7 @@ import com.google.zxing.common.HybridBinarizer;
 
 public class Cssspec2Project extends JFrame implements Runnable, ThreadFactory {
     private static final long serialVersionUID = 6441489157408381878L;
-    private Executor executor = Executors.newSingleThreadExecutor(this);
+    private final Executor executor = Executors.newSingleThreadExecutor(this);
     private Webcam webcam = null;
     private WebcamPanel panel = null;
     private JTextArea textarea = null;
